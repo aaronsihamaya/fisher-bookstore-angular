@@ -1,37 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+
+
 import { AppComponent } from './app.component';
 import { BooksComponent } from './books/books.component';
-import { BookDetailComponent } from './book-detail/book-detail.component';
-import { HomeComponent } from './home/home.component';
-import { OrdersComponent } from './orders/orders.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { FooterComponent } from './footer/footer.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { AppRouterModule } from './/router.module';
-import { BooksService } from './books/books.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooksComponent,
-    BookDetailComponent,
-    HomeComponent,
-    OrdersComponent,
-    NavBarComponent,
-    FooterComponent,
-    NotFoundComponent
+    BooksComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    AppRouterModule,
-    HttpClientModule
+    BrowserModule
   ],
-  providers: [BooksService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
